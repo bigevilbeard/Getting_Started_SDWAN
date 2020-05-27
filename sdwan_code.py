@@ -25,17 +25,18 @@ else:
 token_url = 'https://10.10.20.90/dataservice/client/token'
 
 token = session.get(url=token_url)
-token = token.text
 # print(token)
 headers = {'X-XSRF-TOKEN':token}
 
-if token_url == 200:
+if token.status_code != 200:
     if b'<html>' in token_url.content:
         print(token_url)
         print ("Login Token Failed")
         exit(0)
 else:
     print("Token Success")
+
+token = token.text
 
 print("Getting Attached Devices")
 
@@ -55,3 +56,4 @@ for device in response['data']:
     table.append(info)
 
 print(tabulate(table, headers, tablefmt="fancy_grid"))
+
