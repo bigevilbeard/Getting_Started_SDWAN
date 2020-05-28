@@ -26,7 +26,6 @@ token_url = 'https://10.10.20.90/dataservice/client/token'
 
 token = session.get(url=token_url)
 # print(token)
-headers = {'X-XSRF-TOKEN':token}
 
 if token.status_code != 200:
     if b'<html>' in token_url.content:
@@ -37,6 +36,8 @@ else:
     print("Token Success")
 
 token = token.text
+headers = {'X-XSRF-TOKEN':token}
+session.headers.update(headers)
 
 print("Getting Attached Devices")
 
