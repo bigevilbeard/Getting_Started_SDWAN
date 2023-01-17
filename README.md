@@ -48,8 +48,7 @@ pip install -r requirements.txt
 
 ## About me
 
-Network Automation Developer Advocate for Cisco DevNet.
-I'm like Hugh Hefner... minus the mansion, the exotic cars, the girls, the magazine and the money. So basically, I have a robe.
+Stuart is a Senior Developer Advocate, public speaker, author and DevNet Expert #2022005
 
-Find me here: [LinkedIn](https://www.linkedin.com/in/stuarteclark/) / [Twitter](https://twitter.com/bigevilbeard)
+Find me here: [LinkedIn](https://www.linkedin.com/in/stuarteclark/) / [Twitter](https://twitter.com/bigevilbeard) / [bigevilbeard.io](https://bigevilbeard.github.io/)
 
